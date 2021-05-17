@@ -1,0 +1,29 @@
+.Filters {
+    display: flex;
+    height: 100px;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid #999;
+}
+
+.Filters__text {
+    margin-right: 10px;
+}
+
+.Filters__list .Tag {
+    margin-right: 5px;
+}
+
+.Filters__clear {
+    background: transparent;
+    padding: 0;
+    border: none;
+    text-decoration: underline;
+    font-size: 16px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.Filters__clear:hover {
+    text-decoration: none;
+}

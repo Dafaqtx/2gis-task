@@ -1,0 +1,44 @@
+.Book {
+    border-bottom: 1px solid #999;
+    padding: 15px;
+    margin-bottom: -1px;
+}
+
+.Book__author {
+    margin-bottom: 5px;
+}
+
+.Book__title {
+    margin: 0;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.Book__line {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.Book__btn {
+    min-width: 120px;
+    background: transparent;
+    border: none;
+    padding: 0;
+    font-weight: 600;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.Book__btn:hover {
+    text-decoration: none;
+}
+
+.Book__desc {
+    margin-top: 15px;
+}
+
+.Book__tags .Tag {
+    margin-right: 10px;
+    margin-top: 15px;
+}

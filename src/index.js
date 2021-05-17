@@ -1,11 +1,18 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import "./index.css";
+import { BrowserRouter as Router } from "react-router-dom";
+import { QueryParamProvider } from "use-query-params";
+
 import App from "./App";
 
-ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById("root")
+import "./index.css";
+
+const app = (
+  <Router>
+    <QueryParamProvider>
+      <App />
+    </QueryParamProvider>
+  </Router>
 );
+
+ReactDOM.render(app, document.getElementById("root"));
