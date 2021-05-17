@@ -1,6 +1,3 @@
-import { createContext } from "react";
-export const ContextApp = createContext();
-
 export const initialState = {
   filters: [],
   books: {
@@ -26,8 +23,9 @@ export const appReducer = (state, action) => {
       };
     case "@BOOK/INIT":
       const item = window.localStorage.getItem("books");
-      const items = JSON.parse(item);
-      const books = item ? items : { ...state.books, toRead: action.payload };
+      const books = item
+        ? JSON.parse(item)
+        : { ...state.books, toRead: action.payload };
 
       return {
         ...state,

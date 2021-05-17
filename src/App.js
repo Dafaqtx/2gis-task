@@ -85,10 +85,6 @@ const App = () => {
     setQuery({ tags: undefined });
   };
 
-  if (!books.toRead.length) {
-    return null;
-  }
-
   const getFilteredBooks = (status) =>
     books[status].filter((item) =>
       filters.every((f) => item?.tags?.includes(f))
