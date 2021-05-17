@@ -1,4 +1,4 @@
-import { useEffect, useReducer } from "react";
+import { memo, useEffect, useReducer } from "react";
 import queryString from "query-string";
 import {
   useQueryParams,
@@ -139,4 +139,4 @@ const App = () => {
   );
 };
 
-export default App;
+export default memo(App);

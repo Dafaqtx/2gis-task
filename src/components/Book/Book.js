@@ -35,11 +35,14 @@ const Book = ({
 };
 
 Book.propTypes = {
+  id: PropTypes.string.isRequired,
   author: PropTypes.string.isRequired,
   title: PropTypes.string.isRequired,
   description: PropTypes.string.isRequired,
   tags: PropTypes.array.isRequired,
   status: PropTypes.string.isRequired,
+  onFilter: PropTypes.func.isRequired,
+  onAction: PropTypes.func.isRequired,
 };
 
 export default Book;

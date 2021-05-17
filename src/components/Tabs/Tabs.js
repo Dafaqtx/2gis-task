@@ -51,6 +51,8 @@ const Tabs = ({ query, setQuery, children }) => {
 };
 
 Tabs.propTypes = {
+  query: PropTypes.object.isRequired,
+  setQuery: PropTypes.func.isRequired,
   children: PropTypes.node.isRequired,
 };
 
